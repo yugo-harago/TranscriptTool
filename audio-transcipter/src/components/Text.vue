@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <pre>{{ content }}</pre>
+  <div class="text-container">
+    {{ content }}
   </div>
 </template>
 
@@ -30,3 +30,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.text-container {
+  column-count: auto;
+  column-gap: 2rem;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+</style>
